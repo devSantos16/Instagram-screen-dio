@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            /* gambiarra */
+            /* Como a imagem do telefone ta empurrando o elemento todos, assim não conseguindo centralizar eu diminui o width para centralizar*/
+            width: 80%;
+            min-height: 100vh;
+            background-color: rgb(243, 243, 243);
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .bloco-1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .img-instagram-phone {
+            width: 100%;
+            height: auto
+        }
+
+        .bloco-2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            min-height: 40rem;
+        }
+
+        .group {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid lightgray;
+            background-color: white;
+            width: 100%;
+            padding: 2rem;
+            box-shadow: 1px 1px rgb(243, 243, 243);
+        }
+
+        .img-perfil img {
+            border-radius: 50%;
+            width: 100px;
+        }
+
+        .instagram-login {
+            margin-top: 20px;
+            background-color: aquamarine;
+            border-radius: 10px;
+            font-weight: bold;
+            color: white;
+            width: 50%;
+            text-align: center;
+            line-height: 30px;
+            height: 30px;
+        }
+
+        .instagram-logout {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .not-account {
+            color: #262626;
+        }
+
+        .notaccount {
+            margin-top: 5px;
+        }
+
+        .link-blue {
+            font-weight: bold;
+            color: #0066CC;
+        }
+
+        .download {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .get-the-app {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #262626;
+        }
+
+        .app-download img {
+            margin-top: 20px;
+            width: auto;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bloco-1">
+            <img class="img-instagram-phone responsive" src="img/instagram-celular.png" alt="Imagem do celular">
+        </div>
+        <div class="bloco-2">
+            <div class="group">
+                <img class="img-instagram-logo" src="img/instagram-logo.png" alt="Imagem da logo do instagram">
+                <div class="img-perfil">
+                    <img src="img/perfil-instagram.jpg" alt="Imagem do perfil do instagram">
+                </div>
+                <a href="#" class="instagram-login">Fazer login</a>
+                <a href="#" class="instagram-logout">Remover conta</a>
+            </div>
+            <div class="group">
+                <p class="not-account">Não é @usuario?</p>
+                <p class="notaccount">
+                    <span class="link-blue">Alternar Conta</span>
+                    ou
+                    <span class="link-blue">Inscreva-se</span>
+                </p>
+            </div>
+            <div class="get-the-app">
+                <p class="get-app">Baixe o aplicativo</p>
+                <div class="download">
+                    <a href="#" class="app-download"><img src="img/apple-button.png"
+                            alt="Google Play Donwload"></img></a>
+                    <a href="#" class="app-download"><img src="img/googleplay-button.png"
+                            alt="Google Play Donwload"></img></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

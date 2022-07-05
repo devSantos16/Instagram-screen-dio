@@ -20,7 +20,8 @@
             margin: 0;
             padding: 0;
             /* gambiarra */
-            /* Como a imagem do telefone ta empurrando o elemento todos, assim não conseguindo centralizar eu diminui o width para centralizar*/
+            /* Como a imagem do telefone ta empurrando todos os elementos, 
+            assim não conseguindo centralizar eu diminui o width para centralizar*/
             width: 80%;
             min-height: 100vh;
             background-color: rgb(243, 243, 243);
@@ -119,6 +120,20 @@
             margin-top: 20px;
             width: auto;
             height: 50px;
+        }
+
+        @media(max-width: 1024px){
+            body{
+                width: 100%;
+            }
+
+            .img-instagram-phone{
+                display: none;
+            }
+
+            .bloco-2{
+                width: 80%;
+            }
         }
     </style>
 </head>
